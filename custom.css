@@ -1,1 +1,34 @@
-.header-of-page{margin-top: 3%; text-align: center; color:black;}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    /* background-image: url('./background.jpg'); */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar-nav>li {
+    display: inline-block;
+    float: none;
+}
+
+.card {
+    /* margin-top: 1%; */
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+
+.col-md-12 {
+    margin-top: 1%;
+}
+
+.col-md-4 {
+    margin-top: 1%;
+}
