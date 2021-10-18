@@ -10,9 +10,13 @@
     <link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 
-<body style="background-color: rgb(20, 20, 20);">
+<body style="background-color: black; color: white;">
 
-    <header class="masthead">
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+        <i>Up</i>
+    </button>
+
+    <header class="masthead" id="home">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,16 +26,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#education">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#publications">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                     </ul>
                 </div>
@@ -40,14 +47,14 @@
         <div class="container h-100">
             <div class="row h-75 align-items-center">
                 <div class="col-12 text-center">
-                    <h1 style="color: white;">Vertically Centered Masthead Content</h1>
-                    <p style="color: white;">A great starter layout for a landing page</p>
+                    <h1>Vertically Centered Masthead Content</h1>
+                    <p>A great starter layout for a landing page</p>
                 </div>
             </div>
         </div>
     </header>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row first-row" id="about">
             <div class="col-12 col-md-4">
                 <div class="card ">
                     <div class="card-body">
@@ -79,61 +86,63 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <div class="card ">
-                    <div class="card-body">
-                        <h5 class="card-title">Education</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+        <br>
+        <div class="row" id="education">
+            <div class="col-12 col-md-5" style="text-align:center">
+                <h1>Education</h1>
+                <hr>
+            </div>
+            <div class="col-12 col-md-7">
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-12">
-                <div class="card ">
-                    <div class="card-body">
-                        <h5 class="card-title">Work</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+            <div class="col-12 col-md-5" style="text-align:center">
+                <h1>Work</h1>
+                <hr>
+            </div>
+            <div class="col-12 col-md-7">
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+            </div>
+        </div>
+        <div class="row" id="publications">
+            <div class="col-12 col-md-5" style="text-align:center">
+                <h1>Publications</h1>
+                <hr>
+            </div>
+            <div class="col-12 col-md-7">
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+            </div>
+        </div>
+        <div class="row" id="skills">
+            <div class="col-12 col-md-5" style="text-align:center">
+                <h1>Skills</h1>
+                <hr>
+            </div>
+            <div class="col-12 col-md-7">
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
+                <p>2017-2021</p>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-md-12">
-            <div class="card ">
-                <div class="card-body">
-                    <h5 class="card-title">Publications</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-12">
-            <div class="card ">
-                <div class="card-body">
-                    <h5 class="card-title">Skills</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
     </div>
     <br>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="custom.js"></script>
 </body>
 
 </html>

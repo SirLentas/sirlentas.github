@@ -2,7 +2,7 @@
     height: 100vh;
     min-height: 500px;
     /* background-image: url('./background.jpg'); */
-    background-color: black;
+    background-color: blue;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,16 +19,26 @@
     float: none;
 }
 
+.row {
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.first-row {
+    margin-top: 0%;
+    padding: 0%;
+}
+
 .card {
-    /* margin-top: 1%; */
-    margin-left: 0.1%;
-    margin-right: 0.1%;
+    margin-top: 3%;
+    background-color: rgb(20, 20, 20);
+    color: white;
 }
 
-.col-md-12 {
-    margin-top: 1%;
-}
-
-.col-md-4 {
-    margin-top: 1%;
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: white;
 }
