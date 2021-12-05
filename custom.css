@@ -122,3 +122,10 @@ h5.about-head {
 .icon > svg {
     position: relative;
 }
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
