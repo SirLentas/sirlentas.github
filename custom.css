@@ -35,6 +35,10 @@
     color: white;
 }
 
+.card-title {
+    text-align: center;
+}
+
 .btn-lg {
     border-radius: 50%;
 }
@@ -109,7 +113,7 @@ h5.about-head {
     background-color: black;
 }
 
-.card-body .eight h3:after,.card-body .eight h3:before{
+.card-body .eight h3:after, .card-body .eight h3:before {
     background-color: rgb(20, 20, 20);
 }
 
@@ -119,13 +123,15 @@ h5.about-head {
     height: 20px;
     overflow: hidden;
 }
-.icon > svg {
+
+.icon>svg {
     position: relative;
 }
 
 a:link {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
