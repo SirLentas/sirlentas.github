@@ -1,0 +1,260 @@
+/* Νέα Aesthetic Παλέτα: Καφέ και Μπεζ */
+:root {
+    --primary-color: #5D4037; /* Σκούρο Καφέ (Coffee/Mocha) - Κυρίως Χρώμα/Κεφαλίδες */
+    --secondary-color: #A1887F; /* Μεσαίο Καφέ/Γκρι Μπεζ - Χρώμα Έμφασης/Κουμπιά */
+    --background-light: #FBF8F1; /* Πολύ Ανοιχτό Μπεζ (Off-White) - Φόντο */
+    --background-medium: #EFEBE9; /* Ανοιχτό Γκρι Μπεζ - Φόντο Ενοτήτων */
+    --text-dark: #3E2723; /* Σχεδόν Μαύρο Καφέ - Κείμενο */
+    --text-light: #ffffff; /* Λευκό για σκούρα φόντα */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+    transition: background-color 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+/* Κεφαλίδα / Πλοήγηση */
+header {
+    background: var(--background-light);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--background-medium);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Ενότητες Περιεχομένου */
+.hero-section, .content-section, .contact-section {
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--background-medium); /* Ελαφρώς πιο σκούρο μπεζ */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid var(--secondary-color); /* Διακριτική γραμμή έμφασης */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    max-width: 900px;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.hero-section p {
+    font-size: 1.15rem;
+    margin: 1.5rem 0 3rem;
+    max-width: 600px;
+}
+
+.cta-button {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 1rem 2.5rem;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.content-section {
+    background-color: var(--background-light);
+}
+
+.about-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 3rem auto;
+    text-align: left;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Κυκλική φωτογραφία */
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery / Portfolio Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid var(--background-medium);
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.project-item:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.project-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: #6d6d6d;
+}
+
+/* Contact Section */
+.contact-section {
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+.contact-section h2 {
+    color: var(--text-light);
+}
+
+.contact-details {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.contact-details p {
+    margin: 1rem 0;
+}
+
+.contact-details a {
+    color: var(--background-light);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: var(--secondary-color);
+}
+
+/* Υποσέλιδο */
+footer {
+    background: var(--text-dark);
+    color: var(--background-medium);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Media Query για μικρές οθόνες */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 2rem;
+        width: 200px;
+        height: 200px;
+    }
+    
+    nav ul {
+        display: none; 
+    }
+
+    header {
+        justify-content: center; 
+    }
+}
